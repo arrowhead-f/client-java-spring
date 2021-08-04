@@ -29,6 +29,11 @@
 	    <module>application-skeleton-subscriber</module>
 	    <module>application-skeleton-publisher</module>
   	</modules>
+
+	<properties>
+		<paho.version>1.2.1</paho.version>
+		<gson.version>2.8.6</gson.version>
+	</properties>
 	
 	<repositories>
 		<repository>
@@ -42,7 +47,17 @@
 			<groupId>ai.aitia</groupId>
 			<artifactId>arrowhead-application-library-java-spring</artifactId>
 			<version>4.4.0.0</version>
-		</dependency>		
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.paho</groupId>
+			<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+			<version>${paho.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.version}</version>
+		</dependency>
 	</dependencies>
 	
 	<build>
